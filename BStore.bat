@@ -3,7 +3,8 @@ title BatchStore
 goto appstore
 :appstore
 cls
-echo Welcome to BatchStore
+curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG-client/main/announcements
+echo --------------------------------------
 echo NOTE: The app name is case-sensitive
 set /p app= Application:
 
