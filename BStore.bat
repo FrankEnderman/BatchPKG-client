@@ -9,6 +9,11 @@ curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG-client/1.1/announc
 echo --------------------------------------
 
 echo NOTE: The app name is case-sensitive
+echo. 
+echo 1. DeleteTempFiles
+echo 2. calc
+echo 3. NetDiag
+echo.
 set /p app= Application:
 setlocal enabledelayedexpansion
 set /a count=1 
