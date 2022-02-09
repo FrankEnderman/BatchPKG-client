@@ -3,8 +3,11 @@ title BatchStore
 goto appstore
 :appstore
 cls
+echo %DATE%, %TIME%
+echo --------------------------------------
 curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG-client/1.1/announcements
 echo --------------------------------------
+
 echo NOTE: The app name is case-sensitive
 set /p app= Application:
 setlocal enabledelayedexpansion
