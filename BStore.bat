@@ -10,9 +10,7 @@ echo --------------------------------------
 
 echo NOTE: The app name is case-sensitive
 echo. 
-echo 1. DeleteTempFiles
-echo 2. calc
-echo 3. NetDiag
+curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG-client/1.1/list
 echo.
 set /p app= Application:
 setlocal enabledelayedexpansion
