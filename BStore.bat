@@ -39,7 +39,7 @@ if %MD5% == "77ad291b0b88a7314c1dd811d669e077" del %app%.bat && echo DownloadBlo
 
 endlocal
 echo.
-curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG/main/%app%.bat >> %app%.bat
+curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG/main/%app%.bat > %app%.bat
 echo.
 echo The file has been downloaded in the same folder as the program
 pause
