@@ -14,6 +14,9 @@ echo.
 curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG-client/1.1/list
 echo.
 set /p app= Application:
+echo 1 = exe
+echo 2 = bat
+set /p extension= exe or bat: 
 setlocal enabledelayedexpansion
 set /a count=1 
 for /f "skip=1 delims=:" %%a in ('CertUtil -hashfile "%app.bat%" MD5') do (
@@ -40,6 +43,7 @@ if %MD5% == "77ad291b0b88a7314c1dd811d669e077" del %app%.bat && echo DownloadBlo
 
 endlocal
 echo.
+if %extension% == 1 echo WARNING! This app may be incompatible with your device.
 curl https://raw.githubusercontent.com/FrankEnderman/BatchPKG/main/%app% > %app%
 echo.
 echo The file has been downloaded in the same folder as the program
